@@ -3,7 +3,9 @@ var mongoose = require('mongoose');
 var defectSchema = mongoose.Schema({
 	name:String,
 	description:String,
-	priority:Number
+	priority:Number,
+	fixDate:Date,
+	status:String
 });
 
 exports.GetAll = function(callback){
